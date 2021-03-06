@@ -1,4 +1,4 @@
-function createFood ():Sprite {
+function createFood () {
     let food = sprites.create(img`
         . . . . . . . e c 7 . . . . . . 
         . . . . e e e c 7 7 e e . . . . 
@@ -17,9 +17,8 @@ function createFood ():Sprite {
         . . . 2 2 e e 4 4 4 2 e e . . . 
         . . . . . 2 2 e e e e . . . . . 
         `, SpriteKind.Food)
-    return food
 }
-function createHero () :Sprite{
+function createHero () {
     let hero = sprites.create(img`
         . . . . . . f f f f . . . . . . 
         . . . . f f f 2 2 f f f . . . . 
@@ -38,7 +37,6 @@ function createHero () :Sprite{
         . . . . . f f f f f f . . . . . 
         . . . . . f f . . f f . . . . . 
         `, SpriteKind.Player)
-    return hero
 }
 createFood()
 createHero()
